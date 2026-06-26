@@ -1,4 +1,4 @@
-package net.supware.tipro;
+package dev.bellcube.andiegraph;
 
 public class NativeLib {
 	private static final String TAG = NativeLib.class.getSimpleName();

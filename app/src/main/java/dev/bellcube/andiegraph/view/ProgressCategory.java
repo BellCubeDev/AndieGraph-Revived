@@ -1,11 +1,11 @@
-package net.supware.tipro.view;
+package dev.bellcube.andiegraph.view;
 
 import android.content.Context;
 import android.preference.PreferenceCategory;
 import android.util.AttributeSet;
 import android.view.View;
 
-import net.supware.tipro.R;
+import dev.bellcube.andiegraph.R;
 
 public class ProgressCategory extends PreferenceCategory {
 

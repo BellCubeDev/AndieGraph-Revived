@@ -1,0 +1,1 @@
+Faithful calculator emulator for TI-85, 82, 83, 83+ 86 using user-provided ROMs

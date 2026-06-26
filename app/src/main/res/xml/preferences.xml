@@ -27,7 +27,7 @@
         android:defaultValue="false"
         />
         
-    <net.supware.tipro.view.ProgressCategory
+    <dev.bellcube.andiegraph.view.ProgressCategory
         android:key="roms"
         android:title="@string/preference_category_roms"
         android:persistent="false" />

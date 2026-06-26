@@ -1,4 +1,4 @@
-package net.supware.tipro;
+package dev.bellcube.andiegraph;
 
 import java.io.File;
 import java.util.HashSet;
@@ -11,9 +11,9 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
 
-import net.supware.tipro.model.TIGutsModel;
-import net.supware.tipro.view.ProgressCategory;
-import net.supware.tipro.view.RomPreference;
+import dev.bellcube.andiegraph.model.TIGutsModel;
+import dev.bellcube.andiegraph.view.ProgressCategory;
+import dev.bellcube.andiegraph.view.RomPreference;
 
 public class SettingsActivity extends PreferenceActivity {
 	private static final String TAG = SettingsActivity.class.getSimpleName();

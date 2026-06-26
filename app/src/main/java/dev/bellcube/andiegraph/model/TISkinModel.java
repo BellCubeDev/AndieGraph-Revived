@@ -1,4 +1,4 @@
-package net.supware.tipro.model;
+package dev.bellcube.andiegraph.model;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -16,8 +16,8 @@ import android.content.res.Resources;
 import android.graphics.Point;
 import android.util.Log;
 
-import net.supware.tipro.view.ScreenView;
-import net.supware.tipro.view.SkinView;
+import dev.bellcube.andiegraph.view.ScreenView;
+import dev.bellcube.andiegraph.view.SkinView;
 
 public class TISkinModel {
 	public static final String TAG = TISkinModel.class.getSimpleName();

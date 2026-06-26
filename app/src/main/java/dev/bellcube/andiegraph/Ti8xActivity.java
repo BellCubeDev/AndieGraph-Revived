@@ -1,4 +1,4 @@
-package net.supware.tipro;
+package dev.bellcube.andiegraph;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -36,11 +36,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import net.supware.tipro.model.TIButton;
-import net.supware.tipro.model.TIGutsModel;
-import net.supware.tipro.model.TISkinModel;
-import net.supware.tipro.view.ScreenView;
-import net.supware.tipro.view.SkinView;
+import dev.bellcube.andiegraph.model.TIButton;
+import dev.bellcube.andiegraph.model.TIGutsModel;
+import dev.bellcube.andiegraph.model.TISkinModel;
+import dev.bellcube.andiegraph.view.ScreenView;
+import dev.bellcube.andiegraph.view.SkinView;
 
 
 public abstract class Ti8xActivity extends FullScreenActivity {
@@ -291,18 +291,10 @@ public abstract class Ti8xActivity extends FullScreenActivity {
 					}
 				});
 
-			builder.setNeutralButton(R.string.button_support,
+			builder.setNegativeButton(R.string.button_github_repo,
 				new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int id) {
-						showDialog(DIALOG_SUPPORT);
-						dialog.dismiss();
-					}
-				});
-
-			builder.setNegativeButton(R.string.button_donate,
-				new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int id) {
-						openDonateActivity();
+						openGithubRepo();
 						dialog.dismiss();
 					}
 				});
@@ -503,9 +495,9 @@ public abstract class Ti8xActivity extends FullScreenActivity {
 		}
 	}
 
-	private void openDonateActivity() {
+	private void openGithubRepo() {
 		Intent donateIntent = new Intent(Intent.ACTION_VIEW,
-			Uri.parse("http://supware.net/donate"));
+			Uri.parse("https://github.com/BellCubeDev/AndieGraph-Revived"));
 		try {
 			startActivity(donateIntent);
 		}

@@ -1,4 +1,4 @@
-package net.supware.tipro.view;
+package dev.bellcube.andiegraph.view;
 
 import android.content.Context;
 import android.preference.Preference;
@@ -6,7 +6,7 @@ import android.preference.PreferenceCategory;
 import android.view.View;
 import android.widget.Checkable;
 
-import net.supware.tipro.R;
+import dev.bellcube.andiegraph.R;
 
 public class RadioButtonPreference extends Preference {
 	public static final String TAG = RadioButtonPreference.class

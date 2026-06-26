@@ -26,7 +26,7 @@
 static JavaVM *gJavaVM;
 static jobject gInterfaceObject;
 static jobject gInterfaceClass;
-const char *kInterfacePath = "net/supware/tipro/NativeLib";
+const char *kInterfacePath = "dev/bellcube/andiegraph/NativeLib";
 
 static int  palette[PALETTE_SIZE];
 
@@ -173,7 +173,7 @@ JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM* vm, void* reserved) {
 /** onResume() ***********************************************/
 /** Called when the main activity gets onResume()'d         **/
 /*************************************************************/
-JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_onResume(
+JNIEXPORT void JNICALL Java_dev_bellcube_andiegraph_NativeLib_onResume(
     JNIEnv * env,
     jobject thiz
 ) {
@@ -186,7 +186,7 @@ JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_onResume(
 /** onPause() ************************************************/
 /** Called when the main activity gets onPause()'d          **/
 /*************************************************************/
-JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_onPause(
+JNIEXPORT void JNICALL Java_dev_bellcube_andiegraph_NativeLib_onPause(
     JNIEnv * env,
     jobject thiz
 ) {
@@ -198,7 +198,7 @@ JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_onPause(
 /** keyDown() ************************************************/
 /** Key handler for keyDown event, called from JAVA.        **/
 /*************************************************************/
-JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_keyDown(
+JNIEXPORT void JNICALL Java_dev_bellcube_andiegraph_NativeLib_keyDown(
     JNIEnv * env,
     jobject thiz,
     int key
@@ -214,7 +214,7 @@ JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_keyDown(
 /** keyUp() **************************************************/
 /** Key handler for keyUp event, called from JAVA.          **/
 /*************************************************************/
-JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_keyUp(
+JNIEXPORT void JNICALL Java_dev_bellcube_andiegraph_NativeLib_keyUp(
     JNIEnv * env,
     jobject thiz,
     int key
@@ -232,7 +232,7 @@ JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_keyUp(
 /** loadState() **********************************************/
 /** Key handler for loadState event, called from JAVA.      **/
 /*************************************************************/
-JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_loadState(
+JNIEXPORT void JNICALL Java_dev_bellcube_andiegraph_NativeLib_loadState(
     JNIEnv * env,
     jobject thiz,
     jstring filename
@@ -250,7 +250,7 @@ JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_loadState(
 /** saveState() **********************************************/
 /** Key handler for saveState event, called from JAVA.      **/
 /*************************************************************/
-JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_saveState(
+JNIEXPORT void JNICALL Java_dev_bellcube_andiegraph_NativeLib_saveState(
     JNIEnv * env,
     jobject thiz,
     jstring filename
@@ -268,7 +268,7 @@ JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_saveState(
 /** renderScreen() ********************************************/
 /** JNI call to draw the screen                             **/
 /*************************************************************/
-JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_renderScreen(
+JNIEXPORT void JNICALL Java_dev_bellcube_andiegraph_NativeLib_renderScreen(
     JNIEnv * env, 
     jobject thiz, 
     jintArray colors
@@ -333,7 +333,7 @@ JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_renderScreen(
 /** start() **************************************************/
 /** JNI call to start the emulator                          **/
 /*************************************************************/
-JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_start(
+JNIEXPORT void JNICALL Java_dev_bellcube_andiegraph_NativeLib_start(
     JNIEnv * env, 
     jobject thiz,
     int modelId,
@@ -374,7 +374,7 @@ JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_start(
 /** stop() ***************************************************/
 /** JNI call to start the emulator                          **/
 /*************************************************************/
-JNIEXPORT void JNICALL Java_net_supware_tipro_NativeLib_stop(
+JNIEXPORT void JNICALL Java_dev_bellcube_andiegraph_NativeLib_stop(
     JNIEnv * env, 
     jobject thiz
 ) {

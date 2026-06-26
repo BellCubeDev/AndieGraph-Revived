@@ -1,4 +1,4 @@
-package net.supware.tipro.model;
+package dev.bellcube.andiegraph.model;
 
 import java.util.HashMap;
 

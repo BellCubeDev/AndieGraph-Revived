@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndieGraph</string>
+    <string name="app_name">AndieGraph Revived</string>
 
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
@@ -10,10 +10,9 @@
 
     <string name="text_loading_rom">Loading ROM...</string>
 
-    <string name="button_support">Support</string>
-    <string name="button_donate">Donate</string>
+    <string name="button_github_repo">GitHub Repo</string>
 
-    <string name="dialog_about">Version: %s\nCopyright (c) 2011\nby Doug Melton\nhttp://dgmltn.com\nhttp://twitter.com/dgmltn\n\nPorted from AlmostTI\nby Marat Fayzullin\nhttp://fms.komkon.org</string>
+    <string name="dialog_about">Version: %s\nCopyright © 2026 BellCube.\nAvailable under Apache-2.0 License\nhttps://bellcube.dev\n\nOriginal copyright:\nCopyright (c) 2011\nby Doug Melton\nhttp://dgmltn.com\nhttp://twitter.com/dgmltn\n\nPorted from AlmostTI\nby Marat Fayzullin\nhttp://fms.komkon.org</string>
     <string name="dialog_romz">&lt;font color=\"white\"&gt;No ROM image was found on your SD card. A ROM (Read Only Memory) image file contains the original software (written by Texas Instruments) that runs the operating system of this calculator. At the request of Texas Instruments, a ROM image file is no longer included with this app. It\'s illegal to distribute these ROM image files without permission because they contain copyrighted code.&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=\"red\"&gt;Do not ask us for ROM images. TI has specifically requested that we do not distribute them. The only way to legally obtain a ROM image is to download it from your own calculator.&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=\"white\"&gt;That procedure is described here: http://supware.net/roms&lt;br/&gt;&lt;br/&gt;Once you have obtained this ROM image, copy it to your SD card with the name %s.&lt;/font&gt;</string>
     <string name="crouton_rom_not_found">No ROM was found on your SD card. &lt;a href=\"http://dgmltn.com/roms\"&gt;help&lt;/a&gt;</string>
 
@@ -44,4 +43,22 @@
 
     <string name="toast_cannot_open_url">Cannot open URL</string>
     <string name="toast_cannot_send_email">Cannot send email</string>
+
+    <string name="action_import_rom">Import ROM…</string>
+    <string name="action_try_again">Try again</string>
+
+    <string name="dialog_rom_required_title">ROM required</string>
+    <string name="dialog_rom_required_message">Select a calculator ROM file to import into AndieGraph.</string>
+
+    <string name="dialog_invalid_rom_title">Unsupported ROM</string>
+    <string name="dialog_invalid_rom_message">The selected file was not recognized as a supported TI-82, TI-83, TI-83 Plus, TI-85, or TI-86 ROM. Please make sure is the correct file size, the file name includes "TI", and it includes the number of the calculator (e.g. "my-TI83.rom")</string>
+
+    <string name="dialog_rom_import_failed_title">Import failed</string>
+    <string name="dialog_rom_import_failed_message">AndieGraph could not read or copy the selected file.</string>
+
+    <string name="text_importing_rom">Importing ROM…</string>
+    <string name="text_rom_imported">ROM imported</string>
+    <string name="text_no_rom_selected">No ROM was selected. Use Import ROM to try again.</string>
+    <string name="text_selected_rom">Selected ROM</string>
+
 </resources>

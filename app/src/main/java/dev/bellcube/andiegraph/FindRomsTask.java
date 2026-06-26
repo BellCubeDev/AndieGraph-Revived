@@ -1,4 +1,4 @@
-package net.supware.tipro;
+package dev.bellcube.andiegraph;
 
 import java.io.File;
 import java.util.LinkedList;
@@ -9,7 +9,7 @@ import android.os.Environment;
 import android.text.TextUtils;
 import android.util.Log;
 
-import net.supware.tipro.model.TIGutsModel;
+import dev.bellcube.andiegraph.model.TIGutsModel;
 
 abstract public class FindRomsTask extends
 		AsyncTask<Void, FindRomsTask.ProgressData, Void> {

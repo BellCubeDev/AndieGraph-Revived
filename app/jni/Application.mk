@@ -1,3 +1,2 @@
-# The ARMv7 is significanly faster due to the use of the hardware FPU
-APP_ABI := all
-APP_PLATFORM := android-8
+# ABI selection is configured through Gradle's ndk.abiFilters.
+# The native API level is configured through Gradle's minSdk.

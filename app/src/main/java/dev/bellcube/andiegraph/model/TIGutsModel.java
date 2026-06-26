@@ -1,4 +1,4 @@
-package net.supware.tipro.model;
+package dev.bellcube.andiegraph.model;
 
 import java.io.File;
 
@@ -41,8 +41,12 @@ public class TIGutsModel {
 		String ucfilename = file.getName().toUpperCase();
 		long size = file.length();
 
-		if (!ucfilename.contains("TI"))
+		Log.d(TAG, "fileName = " + ucfilename + ", size = " + size);
+
+		if (!ucfilename.contains("TI")) {
+			Log.d(TAG, "ROM filename did not include 'TI'; definitely not a TI ROM!");
 			return -1;
+		}
 
 		if (size == 0x20000 && ucfilename.contains("82"))
 			return ATI_TI82;
@@ -58,6 +62,8 @@ public class TIGutsModel {
 
 		if (size == 0x40000 && ucfilename.contains("86"))
 			return ATI_TI86;
+
+		Log.d(TAG, "Could not identify a known TI ROM.");
 
 		return -1;
 	}

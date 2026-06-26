@@ -1,4 +1,4 @@
-package net.supware.tipro.view;
+package dev.bellcube.andiegraph.view;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -14,7 +14,7 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 
-import net.supware.tipro.model.TIButton;
+import dev.bellcube.andiegraph.model.TIButton;
 
 public class SkinView extends View {
 	private static final String TAG = SkinView.class.getSimpleName();

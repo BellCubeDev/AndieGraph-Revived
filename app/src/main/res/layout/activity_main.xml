@@ -4,13 +4,13 @@
     android:layout_height="match_parent"
     android:layout_gravity="center" >
 
-    <net.supware.tipro.view.SkinView
+    <dev.bellcube.andiegraph.view.SkinView
         android:id="@+id/skin"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#000000" />
 
-    <net.supware.tipro.view.ScreenView
+    <dev.bellcube.andiegraph.view.ScreenView
         android:id="@+id/screen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

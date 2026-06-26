@@ -1,4 +1,4 @@
-package net.supware.tipro.view;
+package dev.bellcube.andiegraph.view;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -15,8 +15,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 
-import net.supware.tipro.NativeLib;
-import net.supware.tipro.R;
+import dev.bellcube.andiegraph.NativeLib;
+import dev.bellcube.andiegraph.R;
 
 public class ScreenView extends View {
 	private static final String TAG = ScreenView.class.getSimpleName();

@@ -1,4 +1,4 @@
-package net.supware.tipro;
+package dev.bellcube.andiegraph;
 
 import android.app.Activity;
 import android.os.Bundle;
