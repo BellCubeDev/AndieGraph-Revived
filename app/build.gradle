@@ -32,7 +32,13 @@ android {
             minifyEnabled false
         }
     }
+
     productFlavors {
+
+    }
+
+    lint {
+        baseline = file("lint-baseline.xml")
     }
 }
 

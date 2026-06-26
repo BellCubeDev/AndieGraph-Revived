@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 9.2.1" type="baseline" client="gradle" dependencies="false" name="AGP (9.2.1)" variant="all" version="9.2.1">
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onStop`"
+        errorLine1=" protected void onStop() {"
+        errorLine2="                ~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/Ti8xActivity.java"
+            line="210"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This LinearLayout should use `android:layout_height=&quot;wrap_content&quot;`"
+        errorLine1="  android:layout_height=&quot;match_parent&quot;"
+        errorLine2="  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/support_request_dialog_view.xml"
+            line="11"
+            column="3"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        errorLine1="  editor.commit();"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/SettingsActivity.java"
+            line="128"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        errorLine1="  editor.commit();"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/Ti8xActivity.java"
+            line="419"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toUpperCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="  String ucfilename = file.getName().toUpperCase();"
+        errorLine2="                                     ~~~~~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/model/TIGutsModel.java"
+            line="41"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="InvalidId"
+        message="Invalid id; ID definitions **must** be of the form `@+id/name`; did you mean `@+id/title`?"
+        errorLine1="        android:id=&quot;@+android:id/title&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/preference_progress_category.xml"
+            line="10"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidWakeLockTag"
+        message="Tag name should use a unique prefix followed by a colon (found Andie Graph Wake Lock). For instance `myapp:mywakelocktag`. This will help with debugging"
+        errorLine1="  mWakeLock = pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, &quot;Andie Graph Wake Lock&quot;);"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/Ti8xActivity.java"
+            line="178"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="NotificationPermission"
+        message="When targeting Android 13 or higher, posting a permission requires holding the `POST_NOTIFICATIONS` permission (usage from com.squareup.picasso.RemoteViewsAction.NotificationAction)">
+        <location
+            file="src/main/AndroidManifest.xml"/>
+    </issue>
+
+    <issue
+        id="ShowToast"
+        message="Toast created but not shown: did you forget to call `show()`?"
+        errorLine1="   Toast.makeText(this, R.string.toast_cannot_send_email,"
+        errorLine2="   ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/Ti8xActivity.java"
+            line="493"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="ShowToast"
+        message="Toast created but not shown: did you forget to call `show()`?"
+        errorLine1="   Toast.makeText(this, R.string.toast_cannot_open_url,"
+        errorLine2="   ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/Ti8xActivity.java"
+            line="505"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="25"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/app_name&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="101"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.appcompat:appcompat than 1.4.1 is available: 1.7.1"
+        errorLine1="    implementation &apos;androidx.appcompat:appcompat:1.4.1&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="47"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="LockedOrientationActivity"
+        message="Expecting `android:screenOrientation=&quot;unspecified&quot;` or `&quot;fullSensor&quot;` for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices"
+        errorLine1="            android:screenOrientation=&quot;portrait&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        message="A newer version of com.squareup.picasso:picasso than 2.4.0 is available: 2.71828"
+        errorLine1="    implementation &apos;com.squareup.picasso:picasso:2.4.0&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="48"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DiscouragedApi"
+        message="Fixed screen orientations will be ignored in most cases, starting from Android 16. Android is moving toward a model where apps are expected to adapt to various orientations, display sizes, and aspect ratios."
+        errorLine1="            android:screenOrientation=&quot;portrait&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UseRequiresApi"
+        message="Use `@RequiresApi(11) instead of `@TargetApi` to propagate the requirement to callers of `ScreenView`"
+        errorLine1=" @TargetApi(11)"
+        errorLine2=" ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/view/ScreenView.java"
+            line="44"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        errorLine1="  mViewRegion = new Rect(0, 0, getWidth(), getHeight());"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/view/SkinView.java"
+            line="143"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        errorLine1="   mSkinVisibleRegion = new Rect(mSkinButtonRegion);"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/view/SkinView.java"
+            line="148"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        errorLine1="   mSkinVisibleRegion = new Rect(0, 0, mSkinBitmap.getWidth(),"
+        errorLine2="                        ^">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/view/SkinView.java"
+            line="151"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        errorLine1="  mSkinScreenDrawableRegion = new Rect(mSkinVisibleRegion.left,"
+        errorLine2="                              ^">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/view/SkinView.java"
+            line="183"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        errorLine1="  mViewScreenDrawableRegion = new Rect(mViewRegion.left, mViewRegion.top,"
+        errorLine2="                              ^">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/view/SkinView.java"
+            line="186"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        errorLine1="  mSkinButtonDrawableRegion = new Rect(mSkinVisibleRegion.left,"
+        errorLine2="                              ^">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/view/SkinView.java"
+            line="189"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        errorLine1="  mViewButtonDrawableRegion = new Rect(mViewRegion.left,"
+        errorLine2="                              ^">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/view/SkinView.java"
+            line="192"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="WakelockTimeout"
+        message="Provide a timeout when requesting a wakelock with `PowerManager.Wakelock.acquire(long timeout)`. This will ensure the OS will cleanup any wakelocks that last longer than you intend, and will save your user&apos;s battery."
+        errorLine1="    mWakeLock.acquire();"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/Ti8xActivity.java"
+            line="77"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; `SDK_INT` is always >= 11"
+        errorLine1=" @TargetApi(11)"
+        errorLine2=" ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/view/ScreenView.java"
+            line="44"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; `SDK_INT` is always >= 23"
+        errorLine1="  if (Build.VERSION.SDK_INT >= 11) {"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/view/ScreenView.java"
+            line="50"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="This folder configuration (`v11`) is unnecessary; `minSdkVersion` is 23. Merge all the resources in this folder into `values`.">
+        <location
+            file="src/main/res/values-v11"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="This `AsyncTask` class should be static or leaks might occur (dev.bellcube.andiegraph.SettingsActivity.FindAllRomsTask)"
+        errorLine1=" private class FindAllRomsTask extends FindRomsTask {"
+        errorLine2="               ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/SettingsActivity.java"
+            line="41"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="MergeRootFrame"
+        message="This `&lt;FrameLayout>` can be replaced with a `&lt;merge>` tag"
+        errorLine1="&lt;FrameLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="InefficientWeight"
+        message="Use a `layout_height` of `0dp` instead of `wrap_content` for better performance"
+        errorLine1="   android:layout_height=&quot;wrap_content&quot;"
+        errorLine2="   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/support_request_dialog_view.xml"
+            line="26"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.rom_dialog_view` appears to be unused"
+        errorLine1="&lt;ScrollView "
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/rom_dialog_view.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.dummy_button` appears to be unused"
+        errorLine1="    &lt;string name=&quot;dummy_button&quot;>Dummy Button&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.dummy_content` appears to be unused"
+        errorLine1="    &lt;string name=&quot;dummy_content&quot;>DUMMY\nCONTENT&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="5"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.text_loading_rom` appears to be unused"
+        errorLine1="    &lt;string name=&quot;text_loading_rom&quot;>Loading ROM...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="11"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.dialog_romz` appears to be unused"
+        errorLine1="    &lt;string name=&quot;dialog_romz&quot;>&amp;lt;font color=\&quot;white\&quot;&amp;gt;No ROM image was found on your SD card. A ROM (Read Only Memory) image file contains the original software (written by Texas Instruments) that runs the operating system of this calculator. At the request of Texas Instruments, a ROM image file is no longer included with this app. It\&apos;s illegal to distribute these ROM image files without permission because they contain copyrighted code.&amp;lt;/font&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;font color=\&quot;red\&quot;&amp;gt;Do not ask us for ROM images. TI has specifically requested that we do not distribute them. The only way to legally obtain a ROM image is to download it from your own calculator.&amp;lt;/font&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;font color=\&quot;white\&quot;&amp;gt;That procedure is described here: http://supware.net/roms&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Once you have obtained this ROM image, copy it to your SD card with the name %s.&amp;lt;/font&amp;gt;&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="16"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.crouton_rom_not_found` appears to be unused"
+        errorLine1="    &lt;string name=&quot;crouton_rom_not_found&quot;>No ROM was found on your SD card. &amp;lt;a href=\&quot;http://dgmltn.com/roms\&quot;&amp;gt;help&amp;lt;/a&amp;gt;&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="17"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.text_rom_name` appears to be unused"
+        errorLine1="    &lt;string name=&quot;text_rom_name&quot;>TI8*.ROM&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="38"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.text_searching_for_x_rom` appears to be unused"
+        errorLine1="    &lt;string name=&quot;text_searching_for_x_rom&quot;>Searching for %1$s...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="40"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;progress_searching&quot;>Searching...&lt;/string>"
+        errorLine2="                                      ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="9"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;text_loading_rom&quot;>Loading ROM...&lt;/string>"
+        errorLine2="                                    ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="11"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;text_searching_for_x_rom&quot;>Searching for %1$s...&lt;/string>"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="40"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="TypographyOther"
+        message="Replace (c) with copyright symbol © (&amp;#169;) ?"
+        errorLine1="    &lt;string name=&quot;dialog_about&quot;>Version: %s\nCopyright © 2026 BellCube.\nAvailable under Apache-2.0 License\nhttps://bellcube.dev\n\nOriginal copyright:\nCopyright (c) 2011\nby Doug Melton\nhttp://dgmltn.com\nhttp://twitter.com/dgmltn\n\nPorted from AlmostTI\nby Marat Fayzullin\nhttp://fms.komkon.org&lt;/string>"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="15"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="IconDipSize"
+        message="The image `ic_launcher_86.png` varies significantly in its density-independent (dip) size across the various density versions: mipmap-hdpi/ic_launcher_86.png: 64x64 dp (96x96 px), mipmap-mdpi/ic_launcher_86.png: 48x48 dp (48x48 px), mipmap-xhdpi/ic_launcher_86.png: 48x48 dp (96x96 px)">
+        <location
+            file="src/main/res/mipmap-xhdpi/ic_launcher_86.png"/>
+        <location
+            file="src/main/res/mipmap-mdpi/ic_launcher_86.png"/>
+        <location
+            file="src/main/res/mipmap-hdpi/ic_launcher_86.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicatesConfig"
+        message="The `ic_launcher_86.png` icon has identical contents in the following configuration folders: mipmap-hdpi, mipmap-xhdpi">
+        <location
+            file="src/main/res/mipmap-xhdpi/ic_launcher_86.png"/>
+        <location
+            file="src/main/res/mipmap-hdpi/ic_launcher_86.png"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="  &lt;EditText "
+        errorLine2="   ~~~~~~~~">
+        <location
+            file="src/main/res/layout/support_request_dialog_view.xml"
+            line="23"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="UnnecessaryRequiredFeature"
+        message="Consider whether this feature (`android.hardware.touchscreen`) really is required for the app to function; you can set `android:required=&quot;false&quot;` to indicate that the feature is used but not required"
+        errorLine1="    &lt;uses-feature android:name=&quot;android.hardware.touchscreen&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="8"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="`onTouch` should call `View#performClick` when a click is detected"
+        errorLine1="  public boolean onTouch(View v, MotionEvent event) {"
+        errorLine2="                 ~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/Ti8xActivity.java"
+            line="96"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view ``SkinView`` has `setOnTouchListener` called on it but does not override `performClick`"
+        errorLine1="  mSkinView.setOnTouchListener(mSkinOnTouchListener);"
+        errorLine2="  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/dev/bellcube/andiegraph/Ti8xActivity.java"
+            line="184"
+            column="3"/>
+    </issue>
+
+    <issue
+        id="RelativeOverlap"
+        message="`@id/searching_text` can overlap `@android:id/title` if @android:id/title, @string/progress_searching grow due to localized text expansion"
+        errorLine1="    &lt;TextView "
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="src/main/res/layout/preference_progress_category.xml"
+            line="28"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingLeft` you should probably also define `paddingRight` for right-to-left symmetry"
+        errorLine1="        android:paddingLeft=&quot;0dip&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/preference_progress_category.xml"
+            line="9"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingLeft` you should probably also define `paddingRight` for right-to-left symmetry"
+        errorLine1="        android:paddingLeft=&quot;0dip&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/preference_progress_category.xml"
+            line="31"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Use &quot;`start`&quot; instead of &quot;`left`&quot; to ensure correct behavior in right-to-left locales"
+        errorLine1=" android:gravity=&quot;left&quot;"
+        errorLine2="                  ~~~~">
+        <location
+            file="src/main/res/layout/about_dialog_view.xml"
+            line="8"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;8dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginLeft=&quot;8dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="43"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:paddingLeft` with `android:paddingStart=&quot;0dip&quot;` to better support right-to-left layouts"
+        errorLine1="        android:paddingLeft=&quot;0dip&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/preference_progress_category.xml"
+            line="9"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_alignParentLeft` with `android:layout_alignParentStart=&quot;true&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_alignParentLeft=&quot;true&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/preference_progress_category.xml"
+            line="13"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_alignParentRight` with `android:layout_alignParentEnd=&quot;true&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_alignParentRight=&quot;true&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/preference_progress_category.xml"
+            line="22"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;?android:attr/scrollbarSize&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_marginRight=&quot;?android:attr/scrollbarSize&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/preference_progress_category.xml"
+            line="24"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:paddingLeft` with `android:paddingStart=&quot;0dip&quot;` to better support right-to-left layouts"
+        errorLine1="        android:paddingLeft=&quot;0dip&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/preference_progress_category.xml"
+            line="31"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_toLeftOf` with `android:layout_toStartOf=&quot;@id/searching_progress&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_toLeftOf=&quot;@id/searching_progress&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/preference_progress_category.xml"
+            line="36"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;5sp&quot;` to better support right-to-left layouts"
+        errorLine1="        android:layout_marginRight=&quot;5sp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/preference_progress_category.xml"
+            line="37"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;4dip&quot;` to better support right-to-left layouts"
+        errorLine1="    android:layout_marginRight=&quot;4dip&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/preference_widget_radio.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:paddingLeft` with `android:paddingStart=&quot;14dip&quot;` to better support right-to-left layouts"
+        errorLine1="    android:paddingLeft=&quot;14dip&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/rom_dialog_view.xml"
+            line="9"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:paddingRight` with `android:paddingEnd=&quot;10dip&quot;` to better support right-to-left layouts"
+        errorLine1="    android:paddingRight=&quot;10dip&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/rom_dialog_view.xml"
+            line="10"
+            column="5"/>
+    </issue>
+
+</issues>
